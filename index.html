@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Percentage Detection</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <img src="img/logo.png" alt="Plant Logo" class="logo">
+                <div class="title">
+                    <h1>Plant Disease Percentage Detection</h1>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="predictions.html">Predictions</a></li>
+                    <button id="logout" class="logout">Logout</button>
+
+                </ul>
+            </nav> 
+
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <img id="heroImg" src="img/holder.png"/>
+                <h2><span>Upload Your Plant Image</span></h2>
+
+                <form class="heroBtns" id="predict_form">
+                    <label for="plantImage" class="btn custom-file-upload" id="chooseImg">
+                        Choose Image
+                    </label>
+                    <input type="file" id="plantImage" name="plantImage" accept="image/*" class="image-input">
+                    <button type="submit" class="btn" id="analyzis-submit">Analyse</button>
+                </form>
+                
+                <p id="result-holder" class="result"></p>
+
+        </div>
+
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <div class="icon">💡</div>
+                <h3>Technical Excellence</h3>
+                <p>Why is technical excellence so important to us? Because it means we can offer our artificial intelligence solutions they can value and trust.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">💡</div>
+                <h3>Precision Diagnostics</h3>
+                <p>Using deep learning models tailored to specific plants to enhance the accuracy of disease detection.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">💡</div>
+                <h3>Fast Diagnosis</h3>
+                <p>The fast diagnosis provided by this system allows for quicker responses, which can be crucial in preventing extensive crop damage.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Plant Disease Detection || All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
