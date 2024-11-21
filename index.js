@@ -21,7 +21,7 @@ form.addEventListener('submit', async (e) => {
     formData.append('user_id', JSON.parse(localStorage.getItem('user')).id);
 
     try {
-        const response = await axios.post('http://localhost:5000/predict', formData);
+        const response = await axios.post('http://91.108.120.107:5001/predict', formData);
         const data = response.data;
         resultHolder.innerHTML = `
             <style>

@@ -1,12 +1,12 @@
 const getComppleteImageUrl = (image) => {
-    return `http://localhost:5000/images/${image}`
+    return `http://91.108.120.107:5001/images/${image}`
 }
 
 const getUserPredictions = async () => {
     try {
         const user = JSON.parse(localStorage.getItem('user'));
         
-        const response = await axios.get(`http://localhost:5000/users/${user.id}/predictions`);
+        const response = await axios.get(`http://91.108.120.107:5001/users/${user.id}/predictions`);
         const data = response.data;
         const predictionsContainer = document.getElementById('predictions');
         predictionsContainer.innerHTML = '';

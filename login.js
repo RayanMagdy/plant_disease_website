@@ -14,7 +14,7 @@ submit.addEventListener("click", async (e) => {
         password: password.value,
     };
     try {
-        const res = await axios.post("http://localhost:5000/login", data);
+        const res = await axios.post("http://91.108.120.107:5001/login", data);
         console.log(res.data);
         if (res.data.message) {
             saveUser(res.data.user);

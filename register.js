@@ -14,7 +14,7 @@ submit.addEventListener("click", (e) => {
     };
     console.log(data);
     axios
-        .post("http://localhost:5000/register", data)
+        .post("http://91.108.120.107:5001/register", data)
         .then((res) => {
             console.log(res.data);
             if (res.data.message) {
@@ -25,3 +25,5 @@ submit.addEventListener("click", (e) => {
             console.log(err);
         });
 })
+
+
